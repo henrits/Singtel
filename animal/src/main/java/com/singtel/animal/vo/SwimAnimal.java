@@ -1,10 +1,20 @@
 package com.singtel.animal.vo;
 
 public class SwimAnimal extends Animal {
+	private boolean goodSwimmer;
+	
 	public SwimAnimal() {
 		
 	}
 	
+	public SwimAnimal(boolean goodSwimmer) {
+		this.goodSwimmer = goodSwimmer;
+	}
+	
+	public boolean isGoodSwimmer() {
+		return goodSwimmer;
+	}
+
 	public SwimAnimal(String size, String color) {
 		super(size, color);
 	}
