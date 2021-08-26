@@ -55,4 +55,8 @@ public class Animal {
 	public void swim() {
 		System.out.println("I am swimming");
 	}
+	
+	public void sound() {
+		System.out.println("I have sound");
+	}
 }

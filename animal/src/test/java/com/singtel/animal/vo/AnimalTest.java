@@ -43,4 +43,10 @@ public class AnimalTest extends BaseTest {
 		animal.swim();
 		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am swimming"));
 	}
+	
+	@Test
+	public void test_sound() throws Exception{
+		animal.sound();
+		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I have sound"));
+	}
 }
