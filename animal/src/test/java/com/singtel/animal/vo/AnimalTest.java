@@ -19,4 +19,28 @@ public class AnimalTest extends BaseTest {
 		animal.walk();
 		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am walking"));
 	}
+	
+	@Test
+	public void test_fly() throws Exception{
+		animal.fly();
+		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am flying"));
+	}
+	
+	@Test
+	public void test_sing() throws Exception{
+		animal.sing();
+		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am singing"));
+	}
+
+	@Test
+	public void test_say() throws Exception{
+		animal.say();
+		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am saying"));
+	}
+	
+	@Test
+	public void test_swim() throws Exception{
+		animal.swim();
+		Mockito.verify(printStream, VerificationModeFactory.times(1)).println(eq("I am swimming"));
+	}
 }
