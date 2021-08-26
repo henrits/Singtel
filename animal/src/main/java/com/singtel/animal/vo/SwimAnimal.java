@@ -7,16 +7,21 @@ public class SwimAnimal extends Animal {
 		
 	}
 	
-	public SwimAnimal(boolean goodSwimmer) {
+	public SwimAnimal(boolean canSound) {
+		super(false, false, false, false, true, canSound);
+	}
+	
+	public SwimAnimal(boolean goodSwimmer, boolean canSound) {
+		super(false, false, false, false, true, canSound);
 		this.goodSwimmer = goodSwimmer;
+	}
+
+	public SwimAnimal(String size, String color, boolean canSound) {
+		super(size, color, false, false, false, false, true, canSound);
 	}
 	
 	public boolean isGoodSwimmer() {
 		return goodSwimmer;
-	}
-
-	public SwimAnimal(String size, String color) {
-		super(size, color);
 	}
 	
 	public void walk() {

@@ -3,8 +3,12 @@ package com.singtel.animal.vo;
 public class Fish extends SwimAnimal {
 	private String hobby;
 
+	public Fish() {
+		super(false);
+	}
+	
 	public Fish(String size, String color, String hobby) {
-		super(size, color);
+		super(size, color, false);
 
 		this.hobby = hobby;
 	}

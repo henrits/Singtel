@@ -2,13 +2,13 @@ package com.singtel.animal.vo;
 
 import com.singtel.animal.enums.Gender;
 
-public class Chicken extends Animal {
+public class Chicken extends WalkAnimal {
 	public Chicken() {
-
+		super(true, true);
 	}
 
 	public Chicken(Gender gender) {
-		super(gender);
+		super(gender, true, true);
 	}
 
 	public void say() {

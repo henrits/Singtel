@@ -6,16 +6,43 @@ public class Animal {
 	private Gender gender;
 	private String size;
 	private String color;
+	private boolean canWalk;
+	private boolean canFly;
+	private boolean canSing;
+	private boolean canSay;
+	private boolean canSwim;
+	private boolean canSound;
 	
 	public Animal() {
 		
 	}
 	
-	public Animal(Gender gender) {
+	public Animal(boolean canWalk, boolean canFly, boolean canSing, boolean canSay, boolean canSwim, boolean canSound) {
+		this.canWalk = canWalk;
+		this.canFly = canFly;
+		this.canSing = canSing;
+		this.canSay = canSay;
+		this.canSwim = canSwim;
+		this.canSound = canSound;
+	}
+	
+	public Animal(Gender gender, boolean canWalk, boolean canFly, boolean canSing, boolean canSay, boolean canSwim, boolean canSound) {
+		this.canWalk = canWalk;
+		this.canFly = canFly;
+		this.canSing = canSing;
+		this.canSay = canSay;
+		this.canSwim = canSwim;
+		this.canSound = canSound;
 		this.gender = gender;
 	}
 	
-	public Animal(String size, String color) {
+	public Animal(String size, String color, boolean canWalk, boolean canFly, boolean canSing, boolean canSay, boolean canSwim, boolean canSound) {
+		this.canWalk = canWalk;
+		this.canFly = canFly;
+		this.canSing = canSing;
+		this.canSay = canSay;
+		this.canSwim = canSwim;
+		this.canSound = canSound;
 		this.size = size;
 		this.color = color;
 	}
@@ -34,6 +61,30 @@ public class Animal {
 
 	public String getColor() {
 		return color;
+	}
+
+	public boolean isCanWalk() {
+		return canWalk;
+	}
+
+	public boolean isCanFly() {
+		return canFly;
+	}
+
+	public boolean isCanSing() {
+		return canSing;
+	}
+
+	public boolean isCanSay() {
+		return canSay;
+	}
+
+	public boolean isCanSwim() {
+		return canSwim;
+	}
+
+	public boolean isCanSound() {
+		return canSound;
 	}
 
 	public void walk() {
