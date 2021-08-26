@@ -1,6 +1,22 @@
 package com.singtel.animal.vo;
 
+import com.singtel.animal.enums.Gender;
+
 public class Animal {
+	private Gender gender;
+	
+	public Animal() {
+		
+	}
+	
+	public Animal(Gender gender) {
+		this.gender = gender;
+	}
+	
+	public Gender getGender() {
+		return gender;
+	}
+
 	public void walk() {
 		System.out.println("I am walking");
 	}
