@@ -4,6 +4,8 @@ import com.singtel.animal.enums.Gender;
 
 public class Animal {
 	private Gender gender;
+	private String size;
+	private String color;
 	
 	public Animal() {
 		
@@ -13,8 +15,25 @@ public class Animal {
 		this.gender = gender;
 	}
 	
+	public Animal(String size, String color) {
+		this.size = size;
+		this.color = color;
+	}
+	
+	public String getName() {
+		return getClass().getSimpleName();
+	}
+	
 	public Gender getGender() {
 		return gender;
+	}
+	
+	public String getSize() {
+		return size;
+	}
+
+	public String getColor() {
+		return color;
 	}
 
 	public void walk() {
